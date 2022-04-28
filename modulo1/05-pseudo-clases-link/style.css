@@ -1,0 +1,25 @@
+a:link {
+  color: aqua;
+  /* background: red; */
+}
+a:visited {
+  color: tomato;
+}
+
+a:hover {
+  background: #000;
+}
+
+a:active {
+  color: yellowgreen;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+
+div:hover {
+    background: red;
+}
