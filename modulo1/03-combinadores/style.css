@@ -26,3 +26,18 @@
 .version2 > div > a {
   background: #000;
 }
+
+/* combinador hermano */
+
+h1 ~ h2 {
+  color: rgb(255, 0, 234);
+}
+
+h2 ~ h3 {
+  background: rgb(230, 0, 0);
+}
+
+/* combinador hermano adyacente */
+h2 + h3 {
+  color: aqua;
+}

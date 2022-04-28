@@ -1,0 +1,19 @@
+/* first-child */
+
+li:first-child {
+  color: aqua;
+}
+
+li:last-child {
+  color: red;
+}
+
+li:nth-child(5) {
+  color: greenyellow;
+}
+
+/* even signfica los pares */
+li:nth-child(even){
+    background: pink;
+}
+
