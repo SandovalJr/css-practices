@@ -1,0 +1,33 @@
+/* selector de atributo igual a */
+
+a[href="https://google.com"]
+{
+  color: lightcoral;
+}
+
+/* selector de atrinuto contiene */
+a[href*="https://firebase.com"]
+{
+  color: orange;
+}
+
+/* selector de atributo palabra */
+a[title~="Google"] {
+  color: aqua;
+  /* background:red; */
+}
+
+/* sa simple */
+a[target] {
+  background: greenyellow;
+}
+
+/* sa termina con... */
+a[title$=".jpg"] {
+    background: red;
+}
+
+/* sa comienza con */
+a[title^="Coca cola"]{
+    background: blue;
+}
