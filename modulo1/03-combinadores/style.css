@@ -1,0 +1,28 @@
+/* combinador hijo */
+.version1 h1 {
+  color: aqua;
+}
+.version1 p {
+  background: greenyellow;
+}
+
+.version1 a {
+  color: salmon;
+}
+
+/* combinador hijo directo */
+
+.version2 > h1 {
+  color: red;
+}
+.version2 > p {
+  background: rgb(68, 47, 255);
+}
+
+.version2 > a {
+  color: rgb(0, 233, 97);
+}
+
+.version2 > div > a {
+  background: #000;
+}
