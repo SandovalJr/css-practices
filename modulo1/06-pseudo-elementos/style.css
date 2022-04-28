@@ -1,0 +1,17 @@
+p:first-line {
+  color: aqua;
+}
+
+li:first-child::first-letter {
+  font-size: 40px;
+}
+
+/* agrega antes del contenido la letra X */
+li:nth-child(even):before {
+  content: "x";
+  color: red;
+}
+
+li:last-child::after {
+  content: url("./1366_521.jpg");
+}
