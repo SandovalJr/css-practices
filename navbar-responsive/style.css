@@ -1,124 +1,120 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
 * {
-  margin: 0;
   padding: 0;
-  outline: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  background: #f4f4f4;
+nav {
+  background: aqua;
+  height: 80px;
+  width: 100%;
 }
 
-.menu {
-  background: rgb(96, 135, 219);
-  height: 75px;
-  width: 100vw;
-  display: flex;
-  /* dividir el estacio de los elementos de nuestra barra */
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid greenyellow;
-  box-shadow: 5px 0px 10px black;
+.enlace {
+  position: absolute;
+  padding: 20px 50px;
 }
 
 .logo {
-  color: white;
-  font-size: 35px;
-  padding: 0px 80px;
-  font-weight: bold;
+  height: 40px;
 }
 
-.menuItems {
-  display: flex;
-  list-style: none;
-  margin-right: 30px;
+nav ul {
+  float: right;
+  margin-right: 20px;
 }
 
-.menuItems li {
-  border-radius: 3px;
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
   margin: 0 5px;
 }
 
-.menuItems li a {
-  padding: 7px 13px;
-  text-decoration: none;
-  font-size: 18px;
-  display: block;
-  text-transform: uppercase;
+nav ul li a {
   color: white;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
-.menuItems li:hover,
-li.active {
-  background-color: black;
-  transition: 0.4s;
+li a.active,
+li a:hover {
+  background: #000090;
+  transition: 0.5s;
 }
 
-.btn_menu {
-  margin-right: 30px;
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
   cursor: pointer;
   display: none;
 }
-.btn_menu i img {
-  width: 25px;
-  height: 25px;
+
+#check {
+  display: none;
 }
 
-ul.show {
-  top: 65px;
+section {
+  height: calc(100vh - 80px);
+  background: url(./1366_521.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
-@media screen and(max-width: 952px) {
-  .logo {
-    font-size: 30px;
-    padding-left: 35px;
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
   }
-  .menuItems li a {
+
+  nav ul li a {
     font-size: 16px;
   }
 }
 
-@media screen and(max-width:858px) {
-  .menu {
-    height: 65px;
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
   }
 
-  .btn_menu {
-    display: inline-flex;
-  }
-
-  .menu_items {
+  ul {
     position: fixed;
-    width: 100vw;
-    height: calc(100% - 65px);
-    background: #414141;
-    top: -100vh;
+    width: 100%;
+    height: 100vh;
+    background: rgb(31, 197, 25);
+    top: 80px;
+    left: -100%;
     text-align: center;
-    transition: all 0.4s;
-    flex-direction: column;
+    transition: all 0.5s;
   }
 
-  .menu_items li {
-    margin: 30px 0 0 0;
+  nav ul li {
+    display: block;
+    margin: 50px 0;
     line-height: 30px;
   }
 
-  .menu_items li:hover {
-    background: none;
-  }
-
-  .menu_items li a {
+  nav ul li a {
     font-size: 20px;
-    color: red;
-    font-weight: bold;
   }
 
-  .menu_items li a:hover {
-    color: aqua;
+  li a.hover,
+  li a.active {
+    background: none;
+    color: yellowgreen;
   }
 
-  
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+
+
+
 }
