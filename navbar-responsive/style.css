@@ -102,9 +102,23 @@ ul.show {
   }
 
   .menu_items li {
-      margin: 30px 0 0 0;
-      line-height: 30px;
+    margin: 30px 0 0 0;
+    line-height: 30px;
   }
 
+  .menu_items li:hover {
+    background: none;
+  }
 
+  .menu_items li a {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+  }
+
+  .menu_items li a:hover {
+    color: aqua;
+  }
+
+  
 }
