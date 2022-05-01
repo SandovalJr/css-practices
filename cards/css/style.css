@@ -73,3 +73,9 @@ a {
   background: #000;
   color: tomato;
 }
+
+@media (max-width: 413px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
